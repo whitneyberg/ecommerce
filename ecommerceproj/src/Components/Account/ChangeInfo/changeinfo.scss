@@ -1,0 +1,166 @@
+@import '../../_colors.scss';
+
+.change-wrap {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.change-body {
+    width: 550px;
+    // height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    h1 {
+        font-weight: normal;
+        font-family: Baskerville;
+        color: $dark-purple;
+    }
+}
+
+.change-inputs {
+    width: 600px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 40px);
+    margin-bottom: 20px;
+
+    input {
+        padding-left: 10px;
+        border: solid 1px $dark-purple;
+        border-radius: 5px;
+        font-size: 12pt;
+        font-family: Baskerville;
+        outline: none;
+    }
+
+    input:focus {
+        border: solid 2px $purple;
+    }
+}
+
+.change-firstName {
+    grid-column: span 3;
+}
+.change-lastName {
+    grid-column: span 3;
+}
+.change-company {
+    grid-column: span 6;
+}
+.change-address {
+    grid-column: span 6;
+}
+.change-city {
+    grid-column: span 6;
+}
+.change-state {
+    grid-column: span 2;
+}
+.change-zip {
+    grid-column: span 2;
+}
+.change-phone {
+    grid-column: span 2;
+}
+.change-email {
+    grid-column: span 6;
+}
+
+.email-error-true {
+    width: 150px;
+    height: 20px;
+    color: red;
+    font-family: $font;
+}
+.email-error-false {
+    display: none;
+}
+
+.change-buttons {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        width: 136.25px;
+        height: 40px;
+        font-size: 10pt;
+        font-family: Baskerville;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.change-btn {
+    background: $purple;
+    color: white;
+    margin-right: 20px;
+
+    &:hover {
+        color: $dark-purple;
+        transition: 0.3s ease-in-out;
+    }
+    &:active {
+        background: $dark-purple;
+    }
+    &:disabled {
+        background: lightgray;
+        &:hover {
+            color: white;
+            transition: none;
+        }
+    }
+}
+
+.change-cancel-btn {
+    background: $light-purple;
+    color: $dark-purple;
+    &:hover {
+        background: lightgray;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 670px){
+    .change-body {
+        width: 90vw;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        h1 {
+            font-size: 20pt;
+        }
+    }
+    .change-inputs {
+        width: 90vw;
+    }
+    .change-buttons {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .change-inputs {
+        grid-template-rows: repeat(9, 50px);
+        input {
+            grid-column: span 6;
+        }
+    }
+    .change-buttons {
+        justify-content: space-between;
+        button {
+            width: 43vw;
+            height: 50px;
+        }
+    }
+}

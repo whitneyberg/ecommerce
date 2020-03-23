@@ -1,0 +1,243 @@
+.single-wrap {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+  
+  .single-body {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Baskerville;
+    border-bottom: solid 3px #4E2E71; }
+    .single-body h1 {
+      width: 1050px;
+      border-bottom: solid 3px #4E2E71;
+      font-weight: normal;
+      padding-bottom: 5px;
+      color: #4E2E71; }
+  
+  .single-customer-info {
+    width: 950px;
+    height: 110px;
+    display: flex;
+    color: #4E2E71; }
+    .single-customer-info p {
+      margin-bottom: -10px;
+      font-size: 13pt; }
+  
+  .single-customer-left {
+    width: 250px;
+    margin-top: -10px; }
+  
+  .single-customer-right {
+    width: 250px;
+    margin-top: -10px; }
+  
+  .single-items {
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+    font-family: Baskerville;
+    color: #4E2E71;
+    margin-top: 20px;
+    border-top: solid 2px #4E2E71;
+    border-bottom: solid 2px #4E2E71;
+    padding-bottom: 20px; }
+  
+  .single-item1 {
+    width: 950px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #4E2E71; }
+    .single-item1 h4 {
+      font-weight: normal; }
+    .single-item1 div {
+      display: flex;
+      justify-content: space-between;
+      width: 300px; }
+  
+  .single-price {
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 16pt;
+    font-family: Baskerville;
+    color: #4E2E71; }
+  
+  .single-price-subtotal {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #4E2E71;
+    padding-bottom: 25px; }
+    .single-price-subtotal p {
+      margin-bottom: -8px; }
+  
+  .single-price-subtotal-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+  
+  .single-price-subtotal-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+  
+  .single-total {
+    width: 950px;
+    display: flex;
+    justify-content: space-between; }
+  
+  .single-total-payment {
+    width: 300px;
+    display: flex;
+    align-items: center; }
+    .single-total-payment h4 {
+      font-weight: normal;
+      margin-right: 15px;
+      margin-top: -20px;
+      margin-bottom: -20px; }
+    .single-total-payment p {
+      margin-top: -20px;
+      margin-bottom: -20px; }
+  
+  .single-total-price {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .single-total-price li {
+      list-style-type: none;
+      margin-left: -40px; }
+  
+  .single-button {
+    width: 950px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .single-button button {
+      background: #907AD6;
+      color: white;
+      width: 140px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      font-size: 10pt;
+      font-family: Baskerville;
+      cursor: pointer;
+      outline: none; }
+      .single-button button:hover {
+        color: #4E2E71;
+        transition: 0.3s ease-in-out; }
+      .single-button button:active {
+        background: #4E2E71; }
+  
+  @media only screen and (max-width: 1100px) {
+    .single-body {
+      width: 90vw; }
+      .single-body h1 {
+        width: 90vw; }
+    .single-customer-info {
+      width: 80vw; }
+    .single-items {
+      width: 80vw; }
+    .single-item1 {
+      width: 80vw; }
+    .single-price {
+      width: 80vw; }
+    .single-total {
+      width: 80vw;
+      justify-content: space-between; }
+    .single-button {
+      width: 80vw; } }
+  
+  @media only screen and (max-width: 800px) {
+    .single-body h1 {
+      font-size: 20pt; }
+    .single-item1 h4 {
+      font-size: 14pt; }
+    .single-item1 div {
+      font-size: 12pt; }
+    .single-price {
+      font-size: 12pt; }
+    .single-price-subtotal {
+      width: 190px; }
+    .single-total-payment {
+      width: 220px; } }
+  
+  @media only screen and (max-width: 642px) {
+    .single-customer-info {
+      width: 90vw; }
+    .single-items {
+      width: 90vw; }
+    .single-item1 {
+      width: 90vw; }
+      .single-item1 div {
+        width: 220px; }
+    .single-price {
+      width: 90vw; }
+    .single-price-subtotal {
+      width: 155px; }
+    .single-button {
+      width: 90vw; }
+    .single-total {
+      width: 90vw; }
+    .single-total-price {
+      width: 88px; } }
+  
+  @media only screen and (max-width: 500px) {
+    .single-customer-info {
+      height: 90px; }
+      .single-customer-info p {
+        font-size: 11pt; }
+    .single-items h4 {
+      font-size: 12pt; }
+    .single-button button {
+      width: 90vw;
+      height: 50px; } }
+  
+  @media only screen and (max-width: 445px) {
+    .single-item1 div {
+      width: 40vw; }
+    .single-total-payment {
+      width: 140px;
+      flex-direction: column;
+      justify-content: center; }
+      .single-total-payment h4 {
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px; }
+      .single-total-payment p {
+        margin-top: 0px;
+        margin-bottom: 0px; } }
+  
+  @media only screen and (max-width: 410px) {
+    .single-customer-info {
+      flex-direction: column;
+      height: 210px; }
+      .single-customer-info p {
+        font-size: 12pt; }
+    .single-customer-left {
+      margin-bottom: 25px; }
+    .single-total {
+      justify-content: space-between; } }
+  
+  @media only screen and (max-width: 355px) {
+    .single-item1 h4 {
+      width: 30vw; }
+    .single-item1 div {
+      width: 50vw; } }

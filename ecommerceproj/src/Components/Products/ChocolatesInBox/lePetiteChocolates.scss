@@ -1,0 +1,110 @@
+@import '../../_colors.scss';
+
+.le-chocolates-in-box {
+    width: 940px;
+    // height: 720px;
+    background: $light-purple;
+    padding: 20px 20px 40px 40px;
+}
+
+.le-chocolates-description {
+    width: 800px;
+    font-family: Baskerville;
+    color: $dark-purple;
+
+    h1 {
+        font-weight: normal;
+    }
+
+    p {
+        margin-top: -15px;
+    }
+
+}
+
+.le-chocolates-wrap {
+    width: 800px;
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    // border: solid $purple;
+}
+
+.le-chocolates {
+    width: 300px;
+    // height: 250px;
+    font-family: Baskerville;
+    color: $dark-purple;
+    // border: solid;
+    h3 {
+        font-weight: normal;
+        font-size: 15pt;
+    }
+
+    img {
+        width: 150px;
+        height: auto;
+    }
+
+    p {
+        margin-top: -15px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .le-chocolates-in-box {
+        width: 85vw;
+    }
+    .le-chocolates-description {
+        width: 85vw;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .le-chocolates {
+        width: 30vw;
+        img {
+            width: 15vw;
+        }
+    }
+    .le-chocolates-wrap {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    .le-chocolates-in-box {
+        width: 80vw;
+    }
+    .le-chocolates-description {
+        width: 80vw;
+        h1 {
+            font-size: 20pt;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .le-chocolates-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .le-chocolates {
+        width: 70vw;
+        margin-bottom: 20px;
+        img {
+            width: 50vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .le-chocolates-description {
+        h1 {
+            font-size: 17pt;
+        }
+    }
+}

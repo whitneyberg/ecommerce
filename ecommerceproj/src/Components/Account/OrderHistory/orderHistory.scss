@@ -1,0 +1,141 @@
+@import '../../_colors.scss';
+
+.history-wrap {
+    width: 100vw;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history-body {
+    width: 950px;
+    height: 60vh;;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: $font;
+    border-bottom: solid 3px $dark-purple;
+
+    h2 {
+        width: 950px;
+        border-bottom: solid 3px $dark-purple;
+        font-weight: normal;
+        padding-bottom: 5px;
+        color: $dark-purple;
+    }
+}
+
+.order-history {
+    width: 870px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+    // border: solid;
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.single-order {
+    width: 850px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: solid 1px $dark-purple;
+    border-radius: 5px;
+    font-size: 14pt;
+    color: $dark-purple;
+    // cursor: pointer;
+    &:hover {
+        width: 848px;
+        height: 58px;
+        border: solid 2px $purple;
+    }
+}
+
+.order-num-date {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 85px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .history-body {
+        width: 88vw;
+        h2 {
+            width: 88vw;
+        }
+    }
+    .order-history {
+        width: 80vw;
+    }
+    .single-order {
+        width: 78vw;
+        &:hover {
+            width: 77.7vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .order-num-date {
+        width: 50vw;
+        margin-right: 8vw;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .history-body {
+        margin-top: 10px;
+    }
+    .order-history {
+        width: 82vw;
+    }
+    .single-order {
+        height: 80px;
+        justify-content: space-around;
+        &:hover {
+            height: 78px;
+        }
+    }
+    .order-num-date {
+        // border: solid;
+        width: 180px;
+        height: 70px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 0;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .order-history {
+        width: 88vw;
+    }
+    .single-order {
+        width: 86vw;
+        font-size: 12pt;
+        &:hover {
+            width: 85.8vw;
+        }
+    }
+    .order-num-date {
+        width: 150px;
+    }
+}

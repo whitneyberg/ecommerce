@@ -1,0 +1,128 @@
+@import '../_colors.scss';
+
+.login-wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-body {
+    width: 300px;
+    // height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -40px;
+    // margin-bottom: 40px;
+    font-family: Baskerville;
+    color: $dark-purple;
+    // border: solid;
+
+    h1 {
+        font-weight: normal;
+    }
+
+    input {
+        width: 270px;
+        height: 40px;
+        border: solid 1px $dark-purple;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 14pt;
+        font-family: Baskerville;
+        color: $dark-purple;
+        outline: none;
+        // margin-top: -60px;
+    }
+    input:focus {
+        width: 269px;
+        height: 38px;
+        border: solid 2px $purple;
+    }
+}
+
+.login {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-buttons {
+    width: 282px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: solid;
+
+    button {
+        width: 131px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        font-size: 10pt;
+        font-family: Baskerville;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.login-btn {
+    background: $purple;
+    border-radius: 5px;
+    color: white;
+
+    &:hover {
+        color: $dark-purple;
+        transition: 0.3s ease-in-out;
+    }
+    &:active {
+        background: $dark-purple;
+    }
+}
+
+.cancel-btn {
+    background: $light-purple;
+    border-radius: 5px;
+    color: $dark-purple;
+
+    &:hover {
+        background: lightgray;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .login-body {
+        width: 70vw;
+        margin-top: -40px;
+        // h1 {
+        //     margin-bottom: 10px;
+        // }
+        input {
+            width: 70vw;
+        }
+    }
+    .login-buttons {
+        width: 75vw;
+        // border: solid;
+        button {
+            width: 35vw;
+            height: 45px;
+            font-size: 11pt;
+        }
+    }
+
+}

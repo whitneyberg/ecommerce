@@ -1,0 +1,250 @@
+@import '../_colors.scss';
+
+.shopping-wrap {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shopping-body {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: $font;
+
+    h1 {
+        width: 1050px;
+        border-bottom: solid 3px $dark-purple;
+        font-weight: normal;
+        padding-bottom: 5px;
+        color: $dark-purple;
+    }
+}
+
+.clear-bag-btn {
+    width: 1050px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+     // border: solid;
+    button {
+        border: none;
+        background: white;
+        color: $purple;
+        font-size: 12pt;
+        font-family: $font;
+        cursor: pointer;
+        outline: none;
+        &:active {
+            color: $dark-purple;
+        }
+    }
+
+}
+
+.shopping-bag-item {
+    width: 950px;
+    // height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font;
+    color: $dark-purple;
+    border-bottom: solid 1px $dark-purple;
+    margin-bottom: 10px;
+    h4 {
+        font-weight: normal;
+        font-size: 18pt;
+    }
+}
+
+.shopping-item-total {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14pt;
+    font-family: $font;
+    color: $dark-purple;
+    // border: solid;
+    div{
+        // border: solid;
+        width: 110px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+.item-remove {
+    font-size: 12pt;
+    font-family: $font;
+    color: blue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: white;
+}
+.item-total {
+    font-size: 16pt;
+}
+
+.bag-price {
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border-top: solid 3px $dark-purple;
+    border-bottom: solid 3px $dark-purple;
+    margin-bottom: 10px;
+    font-size: 14pt;
+}
+.bag-subtotal {
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: solid 1px $dark-purple;
+}
+.bag-subtotal-text {
+    margin-right: 62px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // border: solid;
+    p {
+        margin-bottom: 0px;
+    }
+}
+.bag-subtotal-numbers {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // border: solid;
+    p {
+        margin-bottom: 0px;
+    }
+}
+.bag-total {
+    width: 144px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bag-checkout-button {
+    width: 950px;
+    display: flex;
+    justify-content: flex-end;
+    // border: solid;
+    button {
+        background: $purple;
+        color: white;
+        width: 120px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        font-size: 10pt;
+        font-family: $font;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            color: $dark-purple;
+            transition: 0.3s ease-in-out;
+        }
+        &:active {
+            background: $dark-purple;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .shopping-body {
+        width: 90vw;
+        h1 {
+            width: 90vw;
+        }
+    }
+    .clear-bag-btn {
+        width: 90vw;
+    }
+    .shopping-bag-item {
+        width: 80vw;
+    }
+    .bag-price{
+        width: 80vw;
+    }
+    .bag-checkout-button {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .shopping-body {
+        h1{
+            font-size: 20pt;
+        }
+    }
+    .shopping-bag-item {
+        h4 {
+            font-size: 16pt
+        }
+    }
+    .shopping-item-total {
+        width: 50vw;
+        font-size: 12pt;
+    }
+    .item-total {
+        font-size: 14pt;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .shopping-bag-item {
+        width: 90vw;
+        flex-direction: column;
+        align-items: flex-start;
+        h4 {
+            margin-bottom: 5px;
+        }
+    }
+    .shopping-item-total {
+        width: 90vw;
+    }
+    .bag-price {
+        width: 90vw;
+    }
+
+    .bag-checkout-button {
+        width: 90vw;
+        button{
+            width: 90vw;
+            height: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .shopping-bag-item {
+        font-size: 12pt;
+        h4 {
+            font-size: 14pt;
+        }
+    }
+    .item-total {
+        font-size: 12pt;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .shopping-bag-items {
+        font-size: 11pt;
+    }
+}

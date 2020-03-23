@@ -1,0 +1,114 @@
+@import '../../_colors.scss';
+
+.dash-wrap {
+    width: 100vw;
+    // height: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dash-body {
+    width: 600px;
+    height: 400px;
+    font-family: $font;
+    color: $dark-purple;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.dash-header {
+    width: 600px;
+    border-bottom: solid 1px $dark-purple;
+    font-size: 18pt;
+    padding-bottom: 15px;
+}
+
+.dash-info {
+    width: 600px;
+    display: flex;
+}
+
+.dash-user-info {
+    // margin-left: -35px;
+    margin-right: 120px;
+    li{
+        list-style-type: none;
+        margin-left: -35px;
+        margin-bottom: 2px;
+    }
+}
+.dash-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    // border: solid;
+    button {
+        background: $purple;
+        color: white;
+        width: 160px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        font-size: 11pt;
+        font-family: $font;
+        cursor: pointer;
+        outline: none;
+        margin-left: -40px;
+        margin-bottom: 10px;
+
+        &:hover {
+            color: $dark-purple;
+            transition: 0.3s ease-in-out;
+        }
+        &:active {
+            background: $dark-purple;
+        }
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .dash-body {
+        width: 90vw;
+    }
+    .dash-header {
+        width: 90vw;
+    }
+    .dash-info {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .dash-info {
+        justify-content: space-between;
+        // ul {
+        //     border: solid;
+        // }
+    }
+    .dash-user-info {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    // .dash-header {
+    //     display: flex;
+    //     justify-content: center;
+    // }
+    .dash-info {
+        flex-direction: column;
+        // align-items: center;
+        font-size: 14pt;
+    }
+    .dash-links {
+        height: 120px;
+        justify-content: space-between;
+        button {
+            width: 90vw;
+            height: 50px;
+            font-size: 14pt;
+        }
+    }
+}

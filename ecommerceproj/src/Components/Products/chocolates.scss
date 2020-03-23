@@ -1,0 +1,204 @@
+@import '../_colors.scss';
+
+.wrapper {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.product-body {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-info {
+    width: 1000px;
+    // height: 500px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.product-description {
+    width: 500px;
+    // border: solid;
+
+    h1 {
+        font-family: Baskerville;
+        font-weight: normal;
+        color: $dark-purple;
+    }
+
+    p {
+        font-size: 14pt;
+        font-family: Baskerville;
+        color: $dark-purple;
+    }
+}
+
+.product-add {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        width: 125px;
+        height: 40px;
+        background: $purple;
+        color: white;
+        font-family: Baskerville;
+        font-size: 14pt;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: $dark-purple;
+        transition: 0.3s ease-in-out;
+    }
+    button:active {
+        background: $dark-purple;
+    }
+
+    input {
+        width: 40px;
+        height: 30px;
+        border: solid $purple 1px;
+        border-radius: 3px;
+        font-size: 14pt;
+        font-family: Baskerville;
+        color: $dark-purple;
+        text-align: center;
+        outline: none;
+    }
+
+    input:focus{
+        border: solid $purple 2px;
+    }
+
+    h3 {
+        font-size: 16pt;
+        font-family: Baskerville;
+        color: $dark-purple;
+        font-weight: normal;
+    }
+}
+
+.product-ingredients {
+    width: 500px;
+    // height: 140px;
+    margin-top: 40px;
+    // border: solid;
+
+    h3 {
+        // width: 500px;
+        font-size: 16pt;
+        font-family: Baskerville;
+        font-weight: normal;
+        color: $dark-purple;
+        margin-top: 0px;
+        // border: solid;
+        // border-bottom: solid $dark-purple 1px;
+    }
+    p {
+        font-size: 14pt;
+        font-family: Baskerville;
+        color: $dark-purple;
+        // border: solid;
+        margin-top: -15px;
+    }
+}
+
+.product-picture {
+    width: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: solid;
+
+    img {
+        width: 300px;
+        height: auto;
+        // margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .product-info {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .product-body {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .product-description {
+        width: 50vw;
+    }
+    .product-add {
+        button:hover {
+            color: white;
+        }
+    }
+    .product-ingredients {
+        width: 50vw;
+    }
+    .product-picture {
+        width: 50vw;
+        img {
+            width: 30vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 690px){
+    .product-body {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .product-info {
+        flex-direction: column;
+    }
+    .product-description {
+        width: 90vw;
+    }
+    .product-add {
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            font-size: 13pt;
+        }
+    }
+    .product-ingredients {
+        width: 90vw;
+    }
+    .product-picture {
+        width: 90vw;
+        margin-top: 20px;
+        img {
+            width: 50vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .product-picture {
+        img {
+            width: 80vw;
+        }
+    }
+}
